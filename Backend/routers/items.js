@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const movies = require("../services/Items");
+const items = require("../services/Items");
 
 router.get("/", async function(req, res, next) {
     try {
-        res.json(await itemss.getItems());
+        res.json(await items.getItems());
     }
     catch (err) {
         next(err);
